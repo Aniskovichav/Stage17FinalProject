@@ -1,6 +1,6 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.DayOfWeek;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.WeekDay;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
 
 import java.util.HashMap;
@@ -8,15 +8,15 @@ import java.util.List;
 import java.util.Map;
 
 public class WeeklyMenu {
-    private Map<DayOfWeek, List<Product>> menu;
+    private Map<WeekDay, List<Product>> menu;
 //    private MenuService menuService;
 
     public WeeklyMenu() {
         this.menu = new HashMap<>();
     }
 
-    public void addMenu(DayOfWeek dayOfWeek, List<Product> products) {
-        menu.put(dayOfWeek, products);
+    public void addMenu(WeekDay weekDay, List<Product> products) {
+        menu.put(weekDay, products);
 //        if (menuService.isMenuBalanced(products)) {
 //            menu.put(dayOfWeek, products);
 //        } else {
@@ -24,12 +24,12 @@ public class WeeklyMenu {
 //        }
     }
 
-    public List<Product> getMenu(DayOfWeek dayOfWeek) {
-        return menu.get(dayOfWeek);
+    public List<Product> getMenu(WeekDay weekDay) {
+        return menu.get(weekDay);
     }
 
     // Геттер для всего меню на неделю (если нужно)
-    public Map<DayOfWeek, List<Product>> getMenu() {
+    public Map<WeekDay, List<Product>> getMenu() {
         return menu;
     }
 

@@ -1,6 +1,6 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
 
-public class Product implements Dish {
+public class Product<T> implements Dish {
     private int weight;
     private double price;
     private NutritionInfo nutritionInfo;

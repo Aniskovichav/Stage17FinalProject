@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Map;
 
 public class OrderService {
-    private ReminderService reminderService;
     public void placeOrder(User user, Map<Product, Integer> items) {
         // Реализация размещения заказа
     }
@@ -33,17 +32,6 @@ public class OrderService {
         return order.calculateTotal();
     }
 
-    public OrderService() {
-        this.reminderService = new ReminderService();
-    }
-
-    public void remindAdminAboutUnmadeOrders(User admin, long delay) {
-        reminderService.scheduleReminderForAdmin(admin, delay);
-    }
-
-    public void remindAdminAboutUnmadeOrdersByExecutor(User admin, User executor, long delay) {
-        reminderService.scheduleReminderForAdminExecutor(admin, executor, delay);
-    }
 
     //реализация
     public List<Group> getAllGroups() {
