@@ -1,2 +1,5 @@
-package by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic;public class DishService {
+package by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic;
+
+public class DishService {
+
 }

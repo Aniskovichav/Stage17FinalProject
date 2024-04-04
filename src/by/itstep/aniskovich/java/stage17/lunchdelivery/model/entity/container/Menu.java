@@ -5,6 +5,7 @@ import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Prod
 import java.util.List;
 
 public class Menu {
+//    Dish dish;
     private List<Product> products;
 
 }

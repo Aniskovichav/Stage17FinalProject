@@ -9,6 +9,7 @@ import java.util.Map;
 
 public class Order {
     private User user;
+    private Menu menu;
     private Map<Product, Integer> items; // Продукт -> количество
     private boolean confirmed; // Статус заказа
 
@@ -50,13 +51,13 @@ public class Order {
         this.confirmed = confirmed;
     }
 
-//    public void confirmOrder(User admin) {
-//        if (admin.equals(user.getGroup().getGroupAdmin())) {
-//            this.confirmed = true;
-//        } else {
-//            throw new IllegalStateException("Only group admin can confirm orders");
-//        }
-//    }
+    public void confirmOrder(User admin) {
+        if (admin.equals(user.getGroup().getGroupAdmin())) {
+            this.confirmed = true;
+        } else {
+            throw new IllegalStateException("Only group admin can confirm orders");
+        }
+    }
 //
 //    public void cancelOrder(User admin) {
 //        if (admin.equals(user.getGroup().getGroupAdmin())) {

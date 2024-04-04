@@ -1,4 +1,4 @@
-package by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic;
+package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user;
 
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Order;
 

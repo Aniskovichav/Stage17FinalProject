@@ -40,7 +40,6 @@ public class Group {
         this.groupAdmin = groupAdmin;
     }
 
-    @Override
     public String toString() {
         return "Group{" +
                 "name='" + name + '\'' +

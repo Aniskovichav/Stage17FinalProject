@@ -1,6 +1,6 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.util;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic.ManagerService;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user.ManagerService;
 
 import java.util.HashMap;
 import java.util.Map;
