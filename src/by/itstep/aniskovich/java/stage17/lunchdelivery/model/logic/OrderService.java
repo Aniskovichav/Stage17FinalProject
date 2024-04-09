@@ -12,66 +12,66 @@ import java.util.List;
 import java.util.Map;
 
 public class OrderService {
-    public void placeOrder(User user, Map<Product, Integer> items) {
-        // Реализация размещения заказа
-    }
-
-    public void confirmOrder(User admin, Order order) {
-        order.confirmOrder(admin); //метод для подтверждения заказа
-    }
-
-    public void addProductToOrder(Order order, Product product, int quantity) {
-        order.addProduct(product, quantity);
-    }
-
-    public void updateProductInOrder(Order order, Product product, int newQuantity) {
-        order.updateProductQuantity(product, newQuantity);
-    }
-
-    public double calculateTotalForOrder(Order order) {
-        return order.calculateTotal();
-    }
-
-
-    //реализация
-    public List<Group> getAllGroups() {
-        return null;
-    }
-
-    public List<Order> getOrdersForGroup(Group group) {
-        return null;
-    }
-
-    public OrderSticker createOrderSticker(Order order, String organizationName) {
-        String dishName = "";
-        String composition = "";
-        boolean isVegetarian = false;
-
-        // Формирование названия блюда и состава
-        StringBuilder dishNameBuilder = new StringBuilder();
-        StringBuilder compositionBuilder = new StringBuilder();
-        for (Map.Entry<Product, Integer> entry : order.getItems().entrySet()) {
-            Product product = entry.getKey();
-            dishNameBuilder.append(product.getName());
-            if (product.getType() == ProductType.MAIN_COURSE) {
-                // Если блюдо - основное, добавляем гарнир к названию блюда
-                dishNameBuilder.append(" (").append(product.getGarnish()).append(")");
-            }
-            dishNameBuilder.append(", ");
-            compositionBuilder.append(product.getName()).append(": ").append(product.getComposition()).append("\n");
-            // Проверяем, является ли хоть одно блюдо вегетарианским
-            if (product.getType() == ProductType.VEGETARIAN_MAIN_COURSE || product.isVegetarian()) {
-                isVegetarian = true;
-            }
-        }
-        dishName = dishNameBuilder.toString();
-        composition = compositionBuilder.toString();
-
-        // Формирование строки с днем недели и датой
-        LocalDate orderDate = order.getOrderDate();
-        String dayOfWeekAndDate = orderDate.getDayOfWeek().toString() + ", " + orderDate.toString();
-
-        return new OrderSticker(dishName, composition, dayOfWeekAndDate, isVegetarian, organizationName);
-    }
+//    public void placeOrder(User user, Map<Product, Integer> items) {
+//        // Реализация размещения заказа
+//    }
+//
+//    public void confirmOrder(User admin, Order order) {
+//        order.confirmOrder(admin); //метод для подтверждения заказа
+//    }
+//
+//    public void addProductToOrder(Order order, Product product, int quantity) {
+//        order.addProduct(product, quantity);
+//    }
+//
+//    public void updateProductInOrder(Order order, Product product, int newQuantity) {
+//        order.updateProductQuantity(product, newQuantity);
+//    }
+//
+//    public double calculateTotalForOrder(Order order) {
+//        return order.calculateTotal();
+//    }
+//
+//
+//    //реализация
+//    public List<Group> getAllGroups() {
+//        return null;
+//    }
+//
+//    public List<Order> getOrdersForGroup(Group group) {
+//        return null;
+//    }
+//
+//    public OrderSticker createOrderSticker(Order order, String organizationName) {
+//        String dishName = "";
+//        String composition = "";
+//        boolean isVegetarian = false;
+//
+//        // Формирование названия блюда и состава
+//        StringBuilder dishNameBuilder = new StringBuilder();
+//        StringBuilder compositionBuilder = new StringBuilder();
+//        for (Map.Entry<Product, Integer> entry : order.getItems().entrySet()) {
+//            Product product = entry.getKey();
+//            dishNameBuilder.append(product.getName());
+//            if (product.getType() == ProductType.MAIN_COURSE) {
+//                // Если блюдо - основное, добавляем гарнир к названию блюда
+//                dishNameBuilder.append(" (").append(product.getGarnish()).append(")");
+//            }
+//            dishNameBuilder.append(", ");
+//            compositionBuilder.append(product.getName()).append(": ").append(product.getComposition()).append("\n");
+//            // Проверяем, является ли хоть одно блюдо вегетарианским
+//            if (product.getType() == ProductType.VEGETARIAN_MAIN_COURSE || product.isVegetarian()) {
+//                isVegetarian = true;
+//            }
+//        }
+//        dishName = dishNameBuilder.toString();
+//        composition = compositionBuilder.toString();
+//
+//        // Формирование строки с днем недели и датой
+//        LocalDate orderDate = order.getOrderDate();
+//        String dayOfWeekAndDate = orderDate.getDayOfWeek().toString() + ", " + orderDate.toString();
+//
+//        return new OrderSticker(dishName, composition, dayOfWeekAndDate, isVegetarian, organizationName);
+//    }
 }
 

@@ -3,6 +3,7 @@ package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Dish;
 
 public class Product<T> implements Dish {
+    private String name;
     private int weight;
     private double price;
     private NutritionInfo nutritionInfo;
@@ -10,7 +11,8 @@ public class Product<T> implements Dish {
     public Product() {
     }
 
-    public Product(int weight, double price) {
+    public Product(String name, int weight, double price) {
+        this.name = name;
         if (weight > 0) {
             this.weight = weight;
         }

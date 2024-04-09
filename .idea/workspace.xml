@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="481c5298-2baf-4f55-9326-b98a80c24cbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/JUnit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/controller/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/ProductInventoryItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stage17.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Stage17.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/NutritionInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/MenuImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/Dish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Appetizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Appetizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/Dish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Extra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Extra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Garnish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Garnish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/MainCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/MainCourse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/DishService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/InventoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/ManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/ManagerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/ModeratorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/ReminderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/util/ProductionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/util/ProductionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Salad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Salad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Soup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Soup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/VegetarianMainCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/VegetarianMainCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/ManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/ManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/WeeklyMenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/ScheduleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/WeeklyMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/WeeklyMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/logic/WeeklyStatementService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/util/ScheduleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/util/ScheduleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/util/WeeklyStatementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/util/WeeklyStatementService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,59 +39,43 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
-        <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2dotIid5YBRwqwaQ6r0Bimg2qwo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
-    <property name="create.test.in.the.same.root" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product" />
-    </key>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.itstep.aniskovich.java.stage17.lunchdelivery.controller.Main" />
+      <module name="Stage17" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <created>1712245179062</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1712245179062</updated>
-    </task>
-    <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
 </project>

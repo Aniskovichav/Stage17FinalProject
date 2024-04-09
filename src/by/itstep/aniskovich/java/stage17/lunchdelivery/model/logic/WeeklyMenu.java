@@ -1,49 +1,50 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.WeekDay;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.WeekDayType;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.MenuImpl;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-public class WeeklyMenu {
-    private Map<WeekDay, List<Product>> menu;
-//    private MenuService menuService;
+public class WeeklyMenu extends MenuImpl {
+    private Map<WeekDayType, List<Product>> menuByDay;
 
     public WeeklyMenu() {
-        this.menu = new HashMap<>();
+        this.menuByDay = new HashMap<>();
+        initializeMenu();
     }
 
-    public void addMenu(WeekDay weekDay, List<Product> products) {
-        menu.put(weekDay, products);
-//        if (menuService.isMenuBalanced(products)) {
-//            menu.put(dayOfWeek, products);
-//        } else {
-//            throw new IllegalArgumentException("Menu is not balanced");
-//        }
+    private void initializeMenu() {
+
+        for (WeekDayType day : WeekDayType.values()) {
+            menuByDay.put(day, new ArrayList<>());
+        }
     }
 
-    public List<Product> getMenu(WeekDay weekDay) {
-        return menu.get(weekDay);
+    public void addProduct(WeekDayType day, Product product) {
+        List<Product> menu = menuByDay.get(day);
+        if (menu != null) {
+            menu.add(product);
+        }
     }
 
-    // Геттер для всего меню на неделю (если нужно)
-    public Map<WeekDay, List<Product>> getMenu() {
-        return menu;
+    @Override
+    public Iterator<Product> createIterator() {
+        List<Product> allProducts = new ArrayList<>();
+        for (List<Product> products : menuByDay.values()) {
+            allProducts.addAll(products);
+        }
+        return allProducts.iterator();
     }
 
-//    WeeklyMenu weeklyMenu = new WeeklyMenu();
-//
-//    // Создание меню на понедельник
-//    List<Product> mondayMenu = new ArrayList<>();
-//    mondayMenu.add(new Product("Салат Цезарь"));
-//    mondayMenu.add(new Product("Борщ"));
-//    mondayMenu.add(new Product("Паста с курицей"));
-//    weeklyMenu.addMenu(DayOfWeek.MONDAY, mondayMenu);
-//
-//    // Получение меню на понедельник
-//    List<Product> menuForMonday = weeklyMenu.getMenu(DayOfWeek.MONDAY);
+    @Override
+    public void addProduct(Product product) {
+        super.addProduct(product);
+    }
 
+    @Override
+    public void removeProduct(Product product) {
+        super.removeProduct(product);
+    }
 }
 
