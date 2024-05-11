@@ -5,9 +5,9 @@ import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Dish
 import java.util.List;
 
 public interface DishRepository {
-    Dish findById(int id);
-    Dish findByName(String name);
-    List<Dish> findAll();
-    void save(Dish dish);
-    void delete(Dish dish);
+    Dish getDishById(int id);
+    List<Dish> getAllDishes();
+    void addDish(Dish dish);
+    void updateDish(Dish dish);
+    void deleteDish(int id);
 }

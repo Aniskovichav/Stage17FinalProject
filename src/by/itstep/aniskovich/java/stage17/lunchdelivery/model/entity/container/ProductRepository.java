@@ -5,8 +5,9 @@ import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Prod
 import java.util.List;
 
 public interface ProductRepository {
-    Product findById(int id);
-    List<Product> findAll();
-    void save(Product product);
-    void delete(Product product);
+    Product getProductById(int id);
+    List<Product> getAllProducts();
+    void addProduct(Product product);
+    void updateProduct(int id, String newName, double newPrice);
+    void deleteProduct(int id);
 }

@@ -3,7 +3,7 @@ package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
 import java.io.Serializable;
 import java.util.List;
 
-public class Dish implements Serializable {
+public abstract class Dish implements Serializable {
     private static final long serialVersionUID = 3L;
 
     private int dishId;
@@ -35,4 +35,7 @@ public class Dish implements Serializable {
     }
 
 
+    public int getId() {
+        return dishId;
+    }
 }

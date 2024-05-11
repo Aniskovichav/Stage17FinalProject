@@ -86,4 +86,7 @@ public class Product implements Serializable {
         return categoryId;
     }
 
+    public void setPrice(double newPrice) {
+        this.basePrice = newPrice;
+    }
 }
