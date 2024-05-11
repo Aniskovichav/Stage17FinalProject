@@ -2,12 +2,12 @@ package by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic;
 
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.WeekDayType;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.MenuImpl;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.old.ProductOld;
 
 import java.util.*;
 
 public class WeeklyMenu extends MenuImpl {
-    private Map<WeekDayType, List<Product>> menuByDay;
+    private Map<WeekDayType, List<ProductOld>> menuByDay;
 
     public WeeklyMenu() {
         this.menuByDay = new HashMap<>();
@@ -21,29 +21,29 @@ public class WeeklyMenu extends MenuImpl {
         }
     }
 
-    public void addProduct(WeekDayType day, Product product) {
-        List<Product> menu = menuByDay.get(day);
+    public void addProduct(WeekDayType day, ProductOld product) {
+        List<ProductOld> menu = menuByDay.get(day);
         if (menu != null) {
             menu.add(product);
         }
     }
 
     @Override
-    public Iterator<Product> createIterator() {
-        List<Product> allProducts = new ArrayList<>();
-        for (List<Product> products : menuByDay.values()) {
+    public Iterator<ProductOld> createIterator() {
+        List<ProductOld> allProducts = new ArrayList<>();
+        for (List<ProductOld> products : menuByDay.values()) {
             allProducts.addAll(products);
         }
         return allProducts.iterator();
     }
 
     @Override
-    public void addProduct(Product product) {
+    public void addProduct(ProductOld product) {
         super.addProduct(product);
     }
 
     @Override
-    public void removeProduct(Product product) {
+    public void removeProduct(ProductOld product) {
         super.removeProduct(product);
     }
 }

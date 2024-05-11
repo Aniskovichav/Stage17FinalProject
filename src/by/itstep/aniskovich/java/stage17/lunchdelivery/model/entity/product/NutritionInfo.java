@@ -6,6 +6,9 @@ public class NutritionInfo {
     private double carbohydrates;
 
     public NutritionInfo() {
+        this.proteins = 0;
+        this.fats = 0;
+        this.carbohydrates = 0;
     }
 
     public NutritionInfo(double proteins, double fats, double carbohydrates) {
@@ -18,24 +21,12 @@ public class NutritionInfo {
         return proteins;
     }
 
-    public void setProteins(double proteins) {
-        this.proteins = proteins;
-    }
-
     public double getFats() {
         return fats;
     }
 
-    public void setFats(double fats) {
-        this.fats = fats;
-    }
-
     public double getCarbohydrates() {
         return carbohydrates;
-    }
-
-    public void setCarbohydrates(double carbohydrates) {
-        this.carbohydrates = carbohydrates;
     }
 
     @Override

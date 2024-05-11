@@ -1,20 +1,18 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic.WeeklyMenu;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.old.ProductOld;
 
-import java.time.DayOfWeek;
 import java.util.*;
 import java.util.function.Consumer;
 
 public class MenuImpl implements Menu {
-    private Set<Product> productList = new HashSet<>();
+    private Set<ProductOld> productList = new HashSet<>();
 
-    private class WeeklyMenuIterator implements Iterator<Product> {
-        private final Iterator<Map.Entry<String, List<Product>>> dayIterator;
-        private Iterator<Product> productIterator;
+    private class WeeklyMenuIterator implements Iterator<ProductOld> {
+        private final Iterator<Map.Entry<String, List<ProductOld>>> dayIterator;
+        private Iterator<ProductOld> productIterator;
 
-        public WeeklyMenuIterator(Map<String, List<Product>> menuByDay) {
+        public WeeklyMenuIterator(Map<String, List<ProductOld>> menuByDay) {
             dayIterator = menuByDay.entrySet().iterator();
         }
 
@@ -32,37 +30,37 @@ public class MenuImpl implements Menu {
         }
 
         @Override
-        public Product next() {
+        public ProductOld next() {
             return productIterator.next();
         }
     }
 
     @Override
-    public Iterator<Product> createIterator() {
+    public Iterator<ProductOld> createIterator() {
         return null;
     }
 
     @Override
-    public void addProduct(Product product) {
+    public void addProduct(ProductOld product) {
         productList.add(product);
     }
 
     @Override
-    public void removeProduct(Product product) {
+    public void removeProduct(ProductOld product) {
         productList.remove(product);
     }
 
     @Override
-    public Iterator<Product> iterator() {
+    public Iterator<ProductOld> iterator() {
         return productList.iterator();
     }
 
     @Override
-    public void forEach(Consumer<? super Product> action) {
+    public void forEach(Consumer<? super ProductOld> action) {
         Menu.super.forEach(action);
     }
 
-    private class MenuIterator implements Iterator<Product> {
+    private class MenuIterator implements Iterator<ProductOld> {
         private int currentIndex = 0;
 
         @Override
@@ -71,7 +69,7 @@ public class MenuImpl implements Menu {
         }
 
         @Override
-        public Product next() {
+        public ProductOld next() {
             return null;
         }
     }

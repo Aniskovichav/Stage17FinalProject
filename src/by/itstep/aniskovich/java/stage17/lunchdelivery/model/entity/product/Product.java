@@ -1,75 +1,89 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Dish;
+import java.io.Serializable;
 
-public class Product<T> implements Dish {
+public class Product implements Serializable {
+
+    private static final long serialVersionUID = 3L;
+
+    private int id;
     private String name;
-    private int weight;
-    private double price;
-    private NutritionInfo nutritionInfo;
+    private double weight;
+    private int quantity;
+    private double calories;
+    private double protein;
+    private double fat;
+    private double carbohydrates;
+    private double basePrice;
+    private int categoryId;
 
     public Product() {
     }
 
-    public Product(String name, int weight, double price) {
+    public Product(int id, String name, double weight, int quantity,
+                   double calories, double protein, double fat,
+                   double carbohydrates, double basePrice, int categoryId) {
+        this.id = id;
         this.name = name;
-        if (weight > 0) {
-            this.weight = weight;
-        }
-
-        if (price > 0) {
-            this.price = price;
-        }
-//        this.nutritionInfo = new NutritionInfo();
+        this.weight = weight;
+        this.quantity = quantity;
+        this.calories = calories;
+        this.protein = protein;
+        this.fat = fat;
+        this.carbohydrates = carbohydrates;
+        this.basePrice = basePrice;
+        this.categoryId = categoryId;
     }
 
-    public int getWeight() {
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
-        if (weight > 0) {
-            this.weight = weight;
-        }
+    public int getQuantity() {
+        return quantity;
     }
 
-    public double getPrice() {
-        return price;
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
-    public void setPrice(double price) {
-        if (price > 0) {
-            this.price = price;
-        }
+    public double getCalories() {
+        return calories;
     }
 
-    public void setNutritionInfo(NutritionInfo nutritionInfo) {
-        this.nutritionInfo = new NutritionInfo();
+    public double getProtein() {
+        return protein;
     }
 
-    @Override
-    public void setName(String name) {
-
+    public double getFat() {
+        return fat;
     }
 
-    @Override
-    public void setComposition(String composition) {
-
+    public double getCarbohydrates() {
+        return carbohydrates;
     }
 
-    @Override
-    public void add(Product product) {
+    public double getBasePrice() {
+        return basePrice;
+    }
+//    public void setBasePrice(double basePrice) {
+//        this.basePrice = basePrice;
+//    }
 
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    @Override
-    public void remove(Product product) {
-
-    }
-
-
-    public NutritionInfo getNutritionInfo() {
-        return nutritionInfo;
-    }
 }
-

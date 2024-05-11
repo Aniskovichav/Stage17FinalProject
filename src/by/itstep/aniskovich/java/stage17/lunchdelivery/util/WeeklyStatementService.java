@@ -1,13 +1,5 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.util;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user.Group;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Order;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic.OrderService;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class WeeklyStatementService {
 //    private OrderService orderService;
 //    private Map<Group, Map<DayOfWeek, Double>> weeklyStatements;
@@ -33,8 +25,8 @@ public class WeeklyStatementService {
 //            }
 //
 //            // Получение заказов группы по дням недели и суммирование стоимостей
-//            List<Order> orders = orderService.getOrdersForGroup(group);
-//            for (Order order : orders) {
+//            List<OrderOld> orders = orderService.getOrdersForGroup(group);
+//            for (OrderOld order : orders) {
 //                DayOfWeek dayOfWeek = order.getOrderDate().getDayOfWeek();
 //                double total = statement.get(dayOfWeek);
 //                total += order.calculateTotal();

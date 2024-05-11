@@ -1,13 +1,11 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
 
-public class Garnish extends Product<Garnish> {
+import java.util.List;
 
-    public Garnish() {
+public class Garnish extends Dish {
+
+    public Garnish(int dishId, String name, List<Product> ingredients, double price, boolean isVegetarian) {
+        super(dishId, name, DishType.GARNISH, ingredients, price,
+                isVegetarian);
     }
-
-    public Garnish(int weight, double price) {
-        super(name, weight, price);
-    }
-
-
 }

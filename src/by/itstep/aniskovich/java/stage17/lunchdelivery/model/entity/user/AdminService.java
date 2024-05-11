@@ -1,7 +1,5 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Order;
-
 public class AdminService {
     private ManagerService managerService;
 
@@ -13,7 +11,7 @@ public class AdminService {
 //        // Логика получения меню от заведующего производством
 //    }
 //
-//    public void receiveOrder(Order order) {
+//    public void receiveOrder(OrderOld order) {
 //        // Логика получения заказа от администратора группы
 //    }
 }

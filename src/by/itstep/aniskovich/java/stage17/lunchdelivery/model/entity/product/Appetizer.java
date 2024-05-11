@@ -1,11 +1,14 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
 
-public class Appetizer extends Product<Appetizer> {
+import java.util.List;
 
-    public Appetizer() {
-    }
-
-    public Appetizer(int weight, double price) {
-        super(name, weight, price);
+public class Appetizer extends Dish {
+    public Appetizer(int dishId, String name, List<Product> ingredients,
+                     double price, boolean isVegetarian) {
+        super(dishId, name, DishType.APPETIZER, ingredients, price,
+                isVegetarian);
     }
 }
+
+
+
