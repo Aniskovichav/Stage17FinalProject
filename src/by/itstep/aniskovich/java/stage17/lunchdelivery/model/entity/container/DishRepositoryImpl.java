@@ -1,6 +1,6 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Dish;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.Dish;
 
 import java.util.ArrayList;
 import java.util.List;

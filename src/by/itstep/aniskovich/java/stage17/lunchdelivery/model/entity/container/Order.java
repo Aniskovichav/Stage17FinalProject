@@ -1,6 +1,6 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Dish;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.Dish;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user.Customer;
 
 import java.io.Serializable;
@@ -46,5 +46,15 @@ public class Order implements Serializable {
 
     public Dish[] getDishes() {
         return dishes.toArray(new Dish[dishes.size()]);
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderId=" + orderId +
+                ", customer=" + customer +
+                ", dishes=" + dishes +
+                ", totalCost=" + totalCost +
+                '}';
     }
 }

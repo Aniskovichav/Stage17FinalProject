@@ -1,7 +1,7 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic;
 
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Order;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Dish;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.Dish;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user.Customer;
 

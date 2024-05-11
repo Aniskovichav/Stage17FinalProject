@@ -2,8 +2,8 @@ package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user;
 
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Menu;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Order;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Dish;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.DishType;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.Dish;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.DishType;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,25 +11,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Customer implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class Customer extends User {
 
-    private int id;
-    private String name;
     private double balance;
     private List<Order> orders;
 
     public Customer() {
+        super();
+        balance = 0;
     }
 
-    public Customer(int id, String name, double balance) {
-        this.id = id;
-        this.name = name;
+    public Customer(int id, String username, UserRole role, double balance) {
+        super(id, username, role);
         this.balance = balance;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public void topUpBalance(double amount) {
@@ -48,46 +42,46 @@ public class Customer implements Serializable {
     }
 
 
-    public List<Dish> getFavoriteDishes() {
-        return null;
-    }
+//    public List<Dish> getFavoriteDishes() {
+//        return null;
+//    }
+//
+//    public void addFavoriteDish(Dish dish) {
+//        // TODO
+//    }
+//
+//    public void removeFavoriteDish(Dish dish) {
+//        // TODO
+//    }
 
-    public void addFavoriteDish(Dish dish) {
-        // TODO
-    }
-
-    public void removeFavoriteDish(Dish dish) {
-        // TODO
-    }
-
-    public List<Dish> generateRecommendations(Menu menu) {
-        List<Dish> recommendations = new ArrayList<>();
-        Map<DishType, Integer> dishCountMap = new HashMap<>();
-
-        for (Order order : orders) {
-            for (Dish dish : order.getDishes()) {
-                if (dishCountMap.containsKey(dish.getType())) {
-                    dishCountMap.put(dish.getType(), dishCountMap.get(dish.getType()) + 1);
-                } else {
-                    dishCountMap.put(dish.getType(), 1);
-                }
-
-                if (dish.getPrice() < 10) {
-                    recommendations.add(dish);
-                }
-            }
-        }
-
-        for (Map.Entry<DishType, Integer> entry : dishCountMap.entrySet()) {
-            DishType dishType = entry.getKey();
-            int count = entry.getValue();
-            recommendations.addAll(menu.getDishesByType(dishType));
-        }
-
-
-
-        return recommendations;
-    }
+//    public List<Dish> generateRecommendations(Menu menu) {
+//        List<Dish> recommendations = new ArrayList<>();
+//        Map<DishType, Integer> dishCountMap = new HashMap<>();
+//
+//        for (Order order : orders) {
+//            for (Dish dish : order.getDishes()) {
+//                if (dishCountMap.containsKey(dish.getType())) {
+//                    dishCountMap.put(dish.getType(), dishCountMap.get(dish.getType()) + 1);
+//                } else {
+//                    dishCountMap.put(dish.getType(), 1);
+//                }
+//
+//                if (dish.getPrice() < 10) {
+//                    recommendations.add(dish);
+//                }
+//            }
+//        }
+//
+//        for (Map.Entry<DishType, Integer> entry : dishCountMap.entrySet()) {
+//            DishType dishType = entry.getKey();
+//            int count = entry.getValue();
+//            recommendations.addAll(menu.getDishesByType(dishType));
+//        }
+//
+//
+//
+//        return recommendations;
+//    }
     public boolean hasDiscount() {
         return this.balance > 100;
     }

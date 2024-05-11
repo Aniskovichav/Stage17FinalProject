@@ -1,7 +1,7 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Dish;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.DishType;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.Dish;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.DishType;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -38,9 +38,11 @@ public class Menu {
         return menuByDate.getOrDefault(date, new ArrayList<>());
     }
 
-    public List<Dish> getRecommendedDishes(DishType dishType, int count) {
-        return null;
-    }
+//    public List<Dish> getRecommendedDishes(DishType dishType, int count) {
+//        return null;
+//    }
 
+//    public Collection<? extends Dish> getDishesByType(DishType dishType) {
+//    }
 }
 

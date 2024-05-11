@@ -1,4 +1,4 @@
-package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
+package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish;
 
 public enum DishType {
     APPETIZER,

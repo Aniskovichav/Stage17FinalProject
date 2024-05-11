@@ -1,18 +1,29 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    private int id;
     private String username;
     private Group group;
     private UserRole role;
 
     public User() {
+        id = 0;
+        username = "noname";
+        group = null;
+        role = UserRole.USER;
     }
 
-    public User(String username, Group group, UserRole role) {
+    public User(int id, String username, UserRole role) {
+        this.id = id;
         this.username = username;
         this.group = group;
         this.role = role;
     }
+
 
     public String getUsername() {
         return username;
@@ -39,11 +50,7 @@ public class User {
     }
 
     public String toString() {
-        return "User{" +
-                "username='" + username + '\'' +
-                ", group=" + group +
-                ", role=" + role +
-                '}';
+        return username + ", group = " + group + ", role  = " + role;
     }
 }
 

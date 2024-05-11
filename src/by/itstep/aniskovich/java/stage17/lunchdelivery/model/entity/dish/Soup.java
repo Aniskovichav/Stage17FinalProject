@@ -1,4 +1,6 @@
-package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
+package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish;
+
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
 
 import java.util.List;
 

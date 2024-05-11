@@ -1,4 +1,6 @@
-package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
+package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish;
+
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
 
 import java.io.Serializable;
 import java.util.List;
@@ -38,4 +40,16 @@ public abstract class Dish implements Serializable {
     public int getId() {
         return dishId;
     }
+
+    public DishType getType() {
+        return type;
+    }
+
+    @Override
+    public String toString() {
+        return name + ", " + type +" (ingredients: " + ingredients +
+                ", $" + price + (isVegetarian ? "VEG" : "") + '}';
+    }
 }
+
+
