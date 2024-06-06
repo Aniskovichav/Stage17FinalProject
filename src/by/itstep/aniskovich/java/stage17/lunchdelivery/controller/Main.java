@@ -46,7 +46,7 @@ public class Main {
         WeeklyMenu weeklyMenu = new WeeklyMenu();
         weeklyMenu.addDailyMenu("Monday", mondayMenu);
 
-        LogUtil.logInfo("Weekly Menu Created");
+//        LogUtil.logInfo("Weekly Menu Created");
 
         DailyMenu retrievedMondayMenu = weeklyMenu.getDailyMenu("Monday");
         for (Salad salad : retrievedMondayMenu.getSalads()) {
