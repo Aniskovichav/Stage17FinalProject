@@ -4,10 +4,10 @@ import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Prod
 
 import java.util.List;
 
-public class Garnish extends Dish {
+public class Garnish extends AbstractDish {
 
-    public Garnish(int dishId, String name, List<Product> ingredients, double price, boolean isVegetarian) {
-        super(dishId, name, DishType.GARNISH, ingredients, price,
-                isVegetarian);
+    public Garnish(int dishId, String name, List<Product> ingredients,
+                   double price) {
+        super(dishId, name, ingredients, price);
     }
 }

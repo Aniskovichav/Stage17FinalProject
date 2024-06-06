@@ -1,15 +1,8 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Menu;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Order;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.Dish;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.DishType;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Customer extends User {
 
@@ -42,24 +35,24 @@ public class Customer extends User {
     }
 
 
-//    public List<Dish> getFavoriteDishes() {
+//    public List<AbstractDish> getFavoriteDishes() {
 //        return null;
 //    }
 //
-//    public void addFavoriteDish(Dish dish) {
+//    public void addFavoriteDish(AbstractDish dish) {
 //        // TODO
 //    }
 //
-//    public void removeFavoriteDish(Dish dish) {
+//    public void removeFavoriteDish(AbstractDish dish) {
 //        // TODO
 //    }
 
-//    public List<Dish> generateRecommendations(Menu menu) {
-//        List<Dish> recommendations = new ArrayList<>();
+//    public List<AbstractDish> generateRecommendations(Menu menu) {
+//        List<AbstractDish> recommendations = new ArrayList<>();
 //        Map<DishType, Integer> dishCountMap = new HashMap<>();
 //
 //        for (Order order : orders) {
-//            for (Dish dish : order.getDishes()) {
+//            for (AbstractDish dish : order.getDishes()) {
 //                if (dishCountMap.containsKey(dish.getType())) {
 //                    dishCountMap.put(dish.getType(), dishCountMap.get(dish.getType()) + 1);
 //                } else {

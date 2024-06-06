@@ -1,12 +1,7 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.Dish;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
-
-import java.util.List;
-
 //public class FoodTechnologist {
-//    public static NutritionalInfo calculateNutritionalInfo(Dish dish) {
+//    public static NutritionalInfo calculateNutritionalInfo(AbstractDish dish) {
 //        List<Product> ingredients = List.of(dish.getIngredients());
 //
 //        double totalProteins = 0;

@@ -4,11 +4,10 @@ import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Prod
 
 import java.util.List;
 
-public class Appetizer extends Dish {
+public class Appetizer extends AbstractDish {
     public Appetizer(int dishId, String name, List<Product> ingredients,
-                     double price, boolean isVegetarian) {
-        super(dishId, name, DishType.APPETIZER, ingredients, price,
-                isVegetarian);
+                     double price) {
+        super(dishId, name, ingredients, price);
     }
 }
 

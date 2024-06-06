@@ -1,6 +1,6 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container;
 
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.Dish;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.AbstractDish;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user.Customer;
 
 import java.io.Serializable;
@@ -12,7 +12,7 @@ public class Order implements Serializable {
 
     private int orderId;
     private Customer customer;
-    private List<Dish> dishes;
+    private List<AbstractDish> abstractDishes;
     private double totalCost;
 
     public Order() {
@@ -21,22 +21,22 @@ public class Order implements Serializable {
     public Order(int orderId, Customer customer) {
         this.orderId = orderId;
         this.customer = customer;
-        this.dishes = new ArrayList<>();
+        this.abstractDishes = new ArrayList<>();
         this.totalCost = 0;
     }
 
-    public void addDish(Dish dish) {
-//        if (dishes.contains(dish)) { пересмотреть, добавление 2х одинаковых блюд
+    public void addDish(AbstractDish abstractDish) {
+//        if (abstractDishes.contains(abstractDish)) { пересмотреть, добавление 2х одинаковых блюд
 //            return;
 //        }
 
-        dishes.add(dish);
-        totalCost += dish.getPrice();
+        abstractDishes.add(abstractDish);
+        totalCost += abstractDish.getPrice();
     }
 
-    public void removeDish(Dish dish) {
-        dishes.remove(dish);
-        totalCost -= dish.getPrice();
+    public void removeDish(AbstractDish abstractDish) {
+        abstractDishes.remove(abstractDish);
+        totalCost -= abstractDish.getPrice();
     }
 
     public double getTotalCost() {
@@ -44,8 +44,8 @@ public class Order implements Serializable {
     }
 
 
-    public Dish[] getDishes() {
-        return dishes.toArray(new Dish[dishes.size()]);
+    public AbstractDish[] getDishes() {
+        return abstractDishes.toArray(new AbstractDish[abstractDishes.size()]);
     }
 
     @Override
@@ -53,7 +53,7 @@ public class Order implements Serializable {
         return "Order{" +
                 "orderId=" + orderId +
                 ", customer=" + customer +
-                ", dishes=" + dishes +
+                ", abstractDishes=" + abstractDishes +
                 ", totalCost=" + totalCost +
                 '}';
     }

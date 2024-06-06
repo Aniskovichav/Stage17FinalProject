@@ -50,7 +50,7 @@ public class User implements Serializable {
     }
 
     public String toString() {
-        return username + ", group = " + group + ", role  = " + role;
+        return username + ", group = " + group + ", role = " + role;
     }
 }
 

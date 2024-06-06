@@ -4,9 +4,12 @@ import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Prod
 
 import java.util.List;
 
-public class Salad extends Dish {
+public class Salad extends AbstractDish {
+    private final boolean isVeg;
+
     public Salad(int dishId, String name, List<Product> ingredients,
-                 double price, boolean isVegetarian) {
-        super(dishId, name, DishType.SALAD, ingredients, price, isVegetarian);
+                 double price, boolean isVeg) {
+        super(dishId, name, ingredients, price);
+        this.isVeg = isVeg;
     }
 }

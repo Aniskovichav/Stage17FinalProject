@@ -1,7 +1,7 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.logic;
 
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.container.Order;
-import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.Dish;
+import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish.AbstractDish;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user.Customer;
 
@@ -39,26 +39,26 @@ public class OrderService {
     public double calculateTotalPrice(Order order) {
         double totalPrice = 0;
 
-        for (Dish dish : order.getDishes()) {
-            totalPrice += calculateTotalPrice(dish);
+        for (AbstractDish abstractDish : order.getDishes()) {
+            totalPrice += calculateTotalPrice(abstractDish);
         }
 
         return totalPrice;
     }
 
-    private double calculateTotalPrice(Dish dish) {
+    private double calculateTotalPrice(AbstractDish abstractDish) {
         double dishPrice = 0;
-        for (Product ingredient : dish.getIngredients()) {
+        for (Product ingredient : abstractDish.getIngredients()) {
             dishPrice += ingredient.getBasePrice();
         }
 
         return dishPrice;
     }
 
-    public List<Dish> getMostPopularDishes(int numberOfDishes) {
-        List<Dish> mostPopularDishes = new ArrayList<>();
+    public List<AbstractDish> getMostPopularDishes(int numberOfDishes) {
+        List<AbstractDish> mostPopularAbstractDishes = new ArrayList<>();
 
-        return mostPopularDishes;
+        return mostPopularAbstractDishes;
     }
 
     public double calculateTotalRevenueForPeriod(LocalDate startDate, LocalDate endDate) {
@@ -81,8 +81,8 @@ public class OrderService {
         return discountedPrice;
     }
     
-    public List<Dish> generateRecommendations(Customer customer) {  
-        List<Dish> recommendations = new ArrayList<>();
+    public List<AbstractDish> generateRecommendations(Customer customer) {
+        List<AbstractDish> recommendations = new ArrayList<>();
 
         return recommendations;
     }

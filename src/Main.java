@@ -26,31 +26,38 @@ public class Main {
 
         List<Product> ingredients1 = new ArrayList<>();
 
-        ingredients.add(new Product(6, "Beetroot", 150, 30, 2));
-        ingredients.add(new Product(7, "Potatoes", 200, 50, 1.5));
-        ingredients.add(new Product(8, "Cabbage", 100, 20, 1));
-        ingredients.add(new Product(9, "Carrots", 80, 25, 1));
-        ingredients.add(new Product(10, "Onion", 50, 10, 0.5));
-        ingredients.add(new Product(11, "Beef", 250, 120, 3));
-        ingredients.add(new Product(12, "Tomato paste", 50, 60, 1));
-        ingredients.add(new Product(13, "Sour cream", 50, 80, 2));
+        ingredients1.add(new Product(6, "Beetroot", 150, 30, 2));
+        ingredients1.add(new Product(7, "Potatoes", 200, 50, 1.5));
+        ingredients1.add(new Product(8, "Cabbage", 100, 20, 1));
+        ingredients1.add(new Product(9, "Carrots", 80, 25, 1));
+        ingredients1.add(new Product(10, "Onion", 50, 10, 0.5));
+        ingredients1.add(new Product(11, "Beef", 250, 120, 3));
+        ingredients1.add(new Product(12, "Tomato paste", 50, 60, 1));
+        ingredients1.add(new Product(13, "Sour cream", 50, 80, 2));
 
         Soup borscht = new Soup(2, "Borscht", ingredients, 120.0, false);
 
         Menu menu = new Menu();
-        menu.addDish(salad, LocalDate.now());
+        menu.addDish(salad, LocalDate.of(2024,5,12));
         menu.addDish(borscht, LocalDate.now());
 
-        Customer customer =  new Customer(1, "Ivan", UserRole.USER, 200);
+        Customer customer =  new Customer(1, "Ivan", UserRole.USER, 300);
+
+        System.out.println("Menu for " + LocalDate.of(2024,5,12) + ":");
+        System.out.println(menu.getMenu(LocalDate.of(2024,5,12)));
+
+        System.out.println("Customer details:");
+        System.out.println(customer);
 
         Order order = new Order(1, customer);
-        order.addDish(salad);
+//        order.addDish(salad);
         order.addDish(salad);
         order.addDish(borscht);
 
-
         System.out.println("Order details:");
         System.out.println(order);
+
+        System.out.println(customer.makePayment(order.getTotalCost()));
 
 
     }
