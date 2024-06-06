@@ -7,8 +7,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class ScheduleService {
-//    private WeeklyStatementService weeklyStatementService;
+public class ReconciliationReport {
+//    private Accountant accountant;
 //    private ScheduledExecutorService scheduler;
 //
 //    public ScheduleService(WeeklyStatementService weeklyStatementService) {

@@ -1,6 +1,6 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.util;
 
-public class WeeklyStatementService {
+public class Accountant {
 //    private OrderService orderService;
 //    private Map<Group, Map<DayOfWeek, Double>> weeklyStatements;
 //

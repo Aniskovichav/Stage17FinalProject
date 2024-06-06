@@ -70,6 +70,8 @@ public class Product implements Serializable {
 
     @Override
     public String toString() {
-        return name;
+        return name + "[proteins = " + protein +
+                ", fats = " + fat +
+                ", carbohydrates = " + carbs + "]";
     }
 }
