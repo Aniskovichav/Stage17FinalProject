@@ -2,7 +2,7 @@ package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.user;
 
 import java.io.Serializable;
 
-public class User implements Serializable {
+public abstract class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private int id;
@@ -10,9 +10,9 @@ public class User implements Serializable {
     private Group group;
     private UserRole role;
 
-    public User() {
-        id = 0;
-        username = "noname";
+    public User(int id, String username) {
+        this.id = 0;
+        this.username = "noname";
         group = null;
         role = UserRole.USER;
     }
