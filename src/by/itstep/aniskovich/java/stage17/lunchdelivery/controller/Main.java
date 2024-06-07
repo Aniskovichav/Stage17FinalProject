@@ -40,7 +40,7 @@ public class Main {
         Soup borscht = new Soup(2, "Borscht", ingredients, 120.0, false);
 
         DailyMenu mondayMenu = new DailyMenu();
-        mondayMenu.addSalad(caesarSalad);
+        mondayMenu.addDish(caesarSalad);
         mondayMenu.addSoup(borscht);
 
         WeeklyMenu weeklyMenu = new WeeklyMenu();
