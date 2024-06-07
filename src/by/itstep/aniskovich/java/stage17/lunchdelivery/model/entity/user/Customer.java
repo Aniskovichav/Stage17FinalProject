@@ -10,7 +10,7 @@ public class Customer extends User {
     private List<Order> orders;
 
     public Customer() {
-        super();
+        super(id, username);
         balance = 0;
     }
 
@@ -47,9 +47,9 @@ public class Customer extends User {
 //        // TODO
 //    }
 
-//    public List<AbstractDish> generateRecommendations(Menu menu) {
+//    public List<AbstractDish> generateRecommendations(DailyMenu menu) {
 //        List<AbstractDish> recommendations = new ArrayList<>();
-//        Map<DishType, Integer> dishCountMap = new HashMap<>();
+//        Map<DailyMenu, Integer> dishCountMap = new HashMap<>();
 //
 //        for (Order order : orders) {
 //            for (AbstractDish dish : order.getDishes()) {
