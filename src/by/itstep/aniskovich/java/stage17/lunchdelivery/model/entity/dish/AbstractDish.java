@@ -2,7 +2,7 @@ package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.dish;
 
 import by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product.Product;
 
-import java.io.Serializable;
+import java.io.*;
 import java.util.List;
 
 public abstract class AbstractDish implements Dish, Serializable {
@@ -64,6 +64,21 @@ public abstract class AbstractDish implements Dish, Serializable {
 
     public List<Product> getIngredients() {
         return ingredients;
+    }
+
+    public void serialize(String filePath) throws IOException {
+        try (ObjectOutputStream oos = new ObjectOutputStream(
+                new FileOutputStream(filePath))) {
+            oos.writeObject(this);
+        }
+    }
+
+    public static AbstractDish deserialize(String filePath)
+            throws IOException, ClassNotFoundException {
+        try (ObjectInputStream ois = new ObjectInputStream(
+                new FileInputStream(filePath))) {
+            return (AbstractDish) ois.readObject();
+        }
     }
 
     @Override
