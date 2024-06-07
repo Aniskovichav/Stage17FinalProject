@@ -1,6 +1,6 @@
 package by.itstep.aniskovich.java.stage17.lunchdelivery.model.entity.product;
 
-import java.io.Serializable;
+import java.io.*;
 
 public class Product implements Serializable {
 
@@ -68,10 +68,25 @@ public class Product implements Serializable {
         this.basePrice = newPrice;
     }
 
+    public void serialize(String filePath) throws IOException {
+        try (ObjectOutputStream oos = new ObjectOutputStream(
+                new FileOutputStream(filePath))) {
+            oos.writeObject(this);
+        }
+    }
+
+    public static Product deserialize(String filePath)
+            throws IOException, ClassNotFoundException {
+        try (ObjectInputStream ois = new ObjectInputStream(
+                new FileInputStream(filePath))) {
+            return (Product) ois.readObject();
+        }
+    }
+
     @Override
     public String toString() {
-        return name + "[proteins = " + protein +
-                ", fats = " + fat +
-                ", carbohydrates = " + carbs + "]";
+        return name + " (quantity: " + quantity + "g, calories: " + calories
+                + ", protein: " + protein + "g, fat: " + fat + "g, carbs: "
+                + carbs + "g)";
     }
 }

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="481c5298-2baf-4f55-9326-b98a80c24cbd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stage17.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Stage17.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/dish/AbstractDish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/dish/AbstractDish.java" afterDir="false" />
+    <list default="true" id="481c5298-2baf-4f55-9326-b98a80c24cbd" name="Changes" comment="add methods serialize, deserialize">
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +64,19 @@
       <option name="presentableId" value="Default" />
       <updated>1717765517752</updated>
     </task>
+    <task id="LOCAL-00001" summary="add methods serialize, deserialize">
+      <option name="closed" value="true" />
+      <created>1717766034367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717766034367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add methods serialize, deserialize" />
+    <option name="LAST_COMMIT_MESSAGE" value="add methods serialize, deserialize" />
   </component>
 </project>
