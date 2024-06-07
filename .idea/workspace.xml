@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="481c5298-2baf-4f55-9326-b98a80c24cbd" name="Changes" comment="add methods serialize, deserialize">
-      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/ProductionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/DailyMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/container/DailyMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/dish/Appetizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/dish/Appetizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/itstep/aniskovich/java/stage17/lunchdelivery/model/entity/user/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717766034367</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add methods serialize, deserialize">
+      <option name="closed" value="true" />
+      <created>1717766342274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717766342274</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
